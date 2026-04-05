@@ -1,13 +1,14 @@
-public class HelloApp {
+public class UC7 {
+        public static void main(String[] args) {
 
-    public static void main(String[] args) {
+            String names = "World";
 
-        if (args.length > 0) {
-            String name = args[0];
-            System.out.println("Hello, " + name + "!");
-        } else {
-            System.out.println("Hello, World!");
+            // If arguments are provided, join them with ", "
+            if (args.length > 0) {
+                names = String.join(", ", args);
+            }
+
+            // Print the greeting
+            System.out.println("Hello, " + names + "!");
         }
-
     }
-}
